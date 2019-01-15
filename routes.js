@@ -15,9 +15,9 @@ module.exports = app => {
 	app.route('/tabungan')
 		.post(bukuTabungan.createTabungan);
 
-	app.route('/tabungan')
-		.put(bukuTabungan.updateTabungan);
+	app.route('/update-tabungan')
+		.post(bukuTabungan.updateTabungan);
 
-	app.route('/tabungan')
-		.delete(bukuTabungan.deleteTabungan);
+	app.route('/delete-tabungan')
+		.post(bukuTabungan.deleteTabungan);
 };
